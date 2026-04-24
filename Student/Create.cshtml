@@ -1,0 +1,13 @@
+﻿@model Student
+
+<h2>Add New Student</h2>
+
+@using (Html.BeginForm("Create", "Student", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()   
+
+    @Html.Partial("_StudentForm", Model)
+
+    <button type="submit" class="btn btn-success">Add Student</button>
+    @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-secondary" })
+}

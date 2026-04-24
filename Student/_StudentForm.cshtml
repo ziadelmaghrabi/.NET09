@@ -1,0 +1,24 @@
+﻿@model Student
+
+<div class="mb-3">
+    @Html.LabelFor(m => m.Name, new { @class = "form-label" })
+    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+</div>
+
+<div class="mb-3">
+    @Html.LabelFor(m => m.Age, new { @class = "form-label" })
+    @Html.TextBoxFor(m => m.Age, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Age, "", new { @class = "text-danger" })
+</div>
+
+<div class="mb-3">
+    @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+</div>
+
+<div class="mb-3">
+    @Html.LabelFor(m => m.Major, new { @class = "form-label" })
+    @Html.TextBoxFor(m => m.Major, new { @class = "form-control" })
+</div>
